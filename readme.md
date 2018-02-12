@@ -11,7 +11,7 @@ All the campaign page essentials, ready to go.
 * Additional scripts can be included in index.html eg; Cloudinary.
 
 #### Dist
-Once your happy with your campaign page, prepare it for the CMS.
+Once you're happy with your campaign page, prepare it for the CMS.
 
 1. Create a copy of your-html.html, and rename as a new territory specific file, eg: UK.html.
 2. Copy and Paste the contents of css/style.css into style tags atop the page.
