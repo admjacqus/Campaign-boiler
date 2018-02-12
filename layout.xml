@@ -1,0 +1,17 @@
+<reference name="head">
+    <block type="core/text" name="externalCss">
+        <action method="setText">
+             <text><![CDATA[<script src="https://static.missguided.co.uk/media/upload/LANDING_PAGES/2017/jquery.cloudinary.js" type="text/javascript"></script>]]>
+            </text>
+        </action>
+    </block>
+</reference>
+<!-- <reference name="after_body_start">
+<block type="core/text" name="schema"> <action method="setText">
+  <text>
+
+  </text>
+  </action> </block>
+</reference> -->
+
+
