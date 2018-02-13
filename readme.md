@@ -3,6 +3,18 @@
 All the campaign page essentials, ready to go.
 
 ## Getting Started
+####Install
+from terminal...
+```
+$ cd your-working-dir
+$ mkdir your-new-landing-page
+$ cd your-new-landing-page
+$ git clone https://github.com/ishiiprints/Campaign-boiler
+$ npm install
+$ npm run start
+$ code .
+```
+
 #### Build
 * HTML - views/your-html.html
 * JS - js/script.js

@@ -163,6 +163,19 @@ section {
 	}
 }
 
+.cta {
+	background: $colour3;
+	padding: 30px 0;
+	p {
+		display: block;
+		font-size: 22px;
+		text-align: center;
+		color: $colour2;
+		margin: 0;
+	}
+}
+
+
 @media (min0-width: 769px) {
 	.hide-on-mob {
 		display: block;
