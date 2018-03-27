@@ -11,6 +11,7 @@ from terminal...
 ```
 $ cd your-working-dir
 $ git clone https://github.com/ishiiprints/Campaign-boiler new-page-name
+$ cd new-page-name
 $ npm install
 $ npm run start
 $ code .
