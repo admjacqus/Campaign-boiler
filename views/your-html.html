@@ -1,10 +1,13 @@
 <!-- combined the slick css files and our custom css to one file -->
 <link rel="stylesheet" type="text/css" href="css/slick.css" />
 <!-- compiled sass from sass/style.scss -->
+<!-- when live, this is hosted on the server, included via layout XML -->
 <link rel="stylesheet" href="css/style.css">
 
+<!-- wrapper for page -->
 <div class="container">
 
+	<!-- wrapper for top section -->
 	<div class="header">
 		<picture>
 			<!-- desktop -->
@@ -143,72 +146,70 @@
 
 			<div class="slick-three">
 				<div>
-					<a href="/clothing/denim " class="tracking ">
-						<div class="imgContainer ">
-							<img src="https://media.missguided.co.uk/image/upload/w_400,b_rgb:ffe5e7/v1503415578/denim_mefx5j.jpg ">
-						</div>
-						<div class="title-below ">
-							<button class="button ">shop denim</button>
-						</div>
+					<a href="/clothing/denim" class="tracking ">
+
+						<img src="https://media.missguided.co.uk/image/upload/w_400,b_rgb:ffe5e7/v1503415578/denim_mefx5j.jpg ">
+
+
+						<button class="button">shop denim</button>
+
 					</a>
 				</div>
 				<div>
-					<a href="/clothing/skirts " class="tracking ">
-						<div class="imgContainer ">
-							<img src="https://media.missguided.co.uk/image/upload/q_70,w_400/v1503415889/skirts_gdzyep.jpg ">
-						</div>
-						<div class="title-below ">
-							<button class="button ">shop skirts</button>
-						</div>
+					<a href="/clothing/skirts" class="tracking ">
+
+						<img src="https://media.missguided.co.uk/image/upload/q_70,w_400/v1503415889/skirts_gdzyep.jpg ">
+
+
+						<button class="button">shop skirts</button>
+
 					</a>
 				</div>
 				<div>
-					<a href="/clothing/tops " class="tracking ">
-						<div class="imgContainer ">
-							<img src="https://media.missguided.co.uk/image/upload/q_70,w_400/v1503415988/tops_wshh88.jpg " alt="backup_img ">
-						</div>
-						<div class="title-below ">
-							<button class="button ">shop tops</button>
-						</div>
+					<a href="/clothing/tops" class="tracking ">
+
+						<img src="https://media.missguided.co.uk/image/upload/q_70,w_400/v1503415988/tops_wshh88.jpg " alt="backup_img ">
+
+						<button class="button ">shop tops</button>
+
 					</a>
 				</div>
 				<div>
-					<a href="/accessories " class="tracking ">
-						<div class="imgContainer ">
-							<img src="https://media.missguided.co.uk/image/upload/q_70,w_400,b_rgb:ffe5e7/v1503415698/accessories_lt7ids.jpg ">
-						</div>
-						<div class="title-below ">
-							<button class="button ">shop accessories</button>
-						</div>
+					<a href="/accessories" class="tracking ">
+
+						<img src="https://media.missguided.co.uk/image/upload/q_70,w_400,b_rgb:ffe5e7/v1503415698/accessories_lt7ids.jpg ">
+
+						<button class="button ">shop accessories</button>
+
 					</a>
 				</div>
 				<div>
 					<a href="/shoes " class="tracking ">
-						<div class="imgContainer ">
-							<img src="https://media.missguided.co.uk/image/upload/q_70,w_400/v1503416062/shoes_zt5bh7.jpg ">
-						</div>
-						<div class="title-below ">
-							<button class="button ">shop shoes</button>
-						</div>
+
+						<img src="https://media.missguided.co.uk/image/upload/q_70,w_400/v1503416062/shoes_zt5bh7.jpg ">
+
+						<button class="button ">shop shoes</button>
+
 					</a>
 				</div>
 				<div>
 					<a href="/clothing/coats-jackets " class="tracking ">
-						<div class="imgContainer ">
-							<img src="https://media.missguided.co.uk/image/upload/q_50,w_400,b_rgb:ffe5e7/v1503415349/coats_xd0qzt.gif ">
-						</div>
-						<div class="title-below ">
-							<button class="button ">shop coats</button>
-						</div>
+
+						<img src="https://media.missguided.co.uk/image/upload/q_50,w_400,b_rgb:ffe5e7/v1503415349/coats_xd0qzt.gif ">
+
+						<button class="button ">shop coats</button>
+
 					</a>
 				</div>
-				<div class="blocker ">
+				<div class="blocker">
 				</div>
 			</div>
 
 		</div>
 
 	</section>
+
+	<!-- must have min one on page for checkMob() to run. -->
 	<div class="hide-on-mob"></div>
 
 
@@ -260,17 +261,14 @@
         is_mobile = true;
         console.log("mob");
         // $('.menu a:nth-child(1)').html("hash");
-        // $('.menu a:nth-child(2)').html("lookbook");
-        // $('.menu a:nth-child(3)').html("shop now");
+
       } else {
         is_mobile = false;
         // $('.menu a:nth-child(1)').html("got to hash");
-        // $('.menu a:nth-child(2)').html("view the lookbook");
-        // $('.menu a:nth-child(3)').html("shop the collection");
       }
     };
 
-    //fix menu
+    //fix menu, based on footer.
     function checkOffset() {
       var menu = $(".menu"),
           a = $(document).scrollTop() + window.innerHeight,
@@ -303,7 +301,10 @@
 		});
 
     $(window).load(function() {
+			// init cloudinary, w_auto
     //   $.cloudinary.responsive();
+
+
       $('.preloader').fadeOut('slow', function() {
         $(this).remove();
       });
