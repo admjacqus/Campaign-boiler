@@ -2742,13 +2742,13 @@ table td {
 @font-face {
     font-family: Missguided;
     font-weight: 300;
-    src: url(fonts/missguided-light.woff2) format("woff2"), url(fonts/missguided-light.ttf) format("truetype")
+    src: url("https://static.missguided.co.uk/skin/frontend/mgresponsive/default/fonts/missguided/missguided-light.woff2") format("woff2"), url("https://static.missguided.co.uk/skin/frontend/mgresponsive/default/fonts/missguided/missguided-light.ttf") format("truetype")
 }
 
 @font-face {
     font-family: Missguided;
     font-weight: 700;
-    src: url(fonts/missguided-bold.woff2) format("woff2"), url(fonts/missguided-bold.ttf) format("truetype")
+    src: url("https://static.missguided.co.uk/skin/frontend/mgresponsive/default/fonts/missguided/missguided-bold.woff2") format("woff2"), url("https://static.missguided.co.uk/skin/frontend/mgresponsive/default/fonts/missguided/missguided-bold.ttf") format("truetype")
 }
 
 .background-overlay {
